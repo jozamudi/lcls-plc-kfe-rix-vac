@@ -11,7 +11,7 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
 			<BitSize>4</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -187,7 +187,7 @@
 				</EtherCAT>
 			</Box>
 			<Box BoxType="9103" BoxFlags="#x00000020" Id="162">
-				<Name>Term 162 (EL6021)</Name>
+				<Name>PAX-EL6021-E6</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT SlaveType="7" PdiType="#x0005" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x17853052" RevisionNo="#x00150000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL6021 Interface (RS422/485)" Desc="EL6021" PortABoxInfo="#x010000a1">
 					<SyncMan>0018f6002600010001000000f600f600f600001826010000</SyncMan>
@@ -1696,7 +1696,7 @@
 				</EtherCAT>
 			</Box>
 			<Box BoxType="9103" BoxFlags="#x00000020" Id="166">
-				<Name>Term 166 (EL6021)</Name>
+				<Name>PAX-EL6021-E9</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT SlaveType="7" PdiType="#x0005" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x17853052" RevisionNo="#x00150000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL6021 Interface (RS422/485)" Desc="EL6021" PortABoxInfo="#x010000a5">
 					<SyncMan>0018f6002600010001000000f600f600f600001826010000</SyncMan>

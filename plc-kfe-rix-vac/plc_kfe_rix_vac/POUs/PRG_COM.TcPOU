@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="PRG_COM" Id="{e26c642a-3c24-4134-9f9c-8e9dad0488ba}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_COM
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbSerialLineControl_SP1K2_PAX_PTM_01(
+    Mode:= SERIALLINEMODE_EL6_22B,
+    pComIn:= ADR(stComIn_SP1K2_PAX_PTM_01),
+    pComOut:= ADR(stComOut_SP1K2_PAX_PTM_01),
+    SizeComIn:= UINT_TO_INT(SIZEOF(stComIn_SP1K2_PAX_PTM_01)),
+    TxBuffer:= SerialTXBuffer_SP1K2_PAX_PTM_01,
+    RxBuffer:= SerialRXBuffer_SP1K2_PAX_PTM_01,
+    Error=> ,
+    ErrorID=> );
+
+fbSerialLineControl_SP1K2_PAX_PTM_02(
+    Mode:= SERIALLINEMODE_EL6_22B,
+    pComIn:= ADR(stComIn_SP1K2_PAX_PTM_02),
+    pComOut:= ADR(stComOut_SP1K2_PAX_PTM_02),
+    SizeComIn:= UINT_TO_INT(SIZEOF(stComIn_SP1K2_PAX_PTM_02)),
+    TxBuffer:= SerialTXBuffer_SP1K2_PAX_PTM_02,
+    RxBuffer:= SerialRXBuffer_SP1K2_PAX_PTM_02,
+    Error=> ,
+    ErrorID=> );
+    ]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
