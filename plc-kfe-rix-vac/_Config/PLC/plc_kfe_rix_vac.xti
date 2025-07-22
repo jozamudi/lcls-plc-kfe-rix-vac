@@ -399,7 +399,7 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{8CBBF67A-BFE9-4149-A495-ECE1092E8FE6}" Name="plc_kfe_rix_vac" PrjFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.plcproj" TmcFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{4C28AA6D-DFF9-21B4-46EA-388B78897A3C}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{6A458FD1-64B5-6F8D-7E10-F586FEC6CF71}">
 			<Name>plc_kfe_rix_vac Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -1308,6 +1308,10 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_RIX_INTF.FB_MR3K2_FIM_ILK.q_xILK_OK_DO</Name>
 					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
 					<Type>BOOL</Type>
@@ -1315,6 +1319,16 @@
 				<Var>
 					<Name>GVL_RIX_INTF.FB_MR4K2_FIM_ILK.q_xILK_OK_DO</Name>
 					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_RIX_ILK.q_xILK_OK_DO</Name>
+					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.RIXS_ROUGH_VRO_01.q_xOPN_DO</Name>
+					<Comment><![CDATA[IO]]></Comment>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
@@ -1674,11 +1688,6 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_RIX_ILK.q_xILK_OK_DO</Name>
-					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>GVL_KFE_RIX_VAC.RIXS_PRO_01.q_xMPStart</Name>
 					<Comment><![CDATA[Main Pump start]]></Comment>
 					<Type>BOOL</Type>
@@ -1686,15 +1695,6 @@
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.RIXS_PRO_01.q_xBPStart</Name>
 					<Comment><![CDATA[ Booster Pump start (this can be started by the pump automatically)]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.RIXS_ROUGH_VRO_01.q_xOPN_DO</Name>
-					<Comment><![CDATA[IO]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>
