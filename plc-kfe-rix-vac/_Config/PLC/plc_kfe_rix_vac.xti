@@ -399,7 +399,7 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{8CBBF67A-BFE9-4149-A495-ECE1092E8FE6}" Name="plc_kfe_rix_vac" PrjFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.plcproj" TmcFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{4C28AA6D-DFF9-21B4-46EA-388B78897A3C}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{BAADD939-E41F-7517-D174-CE3EE99D3910}">
 			<Name>plc_kfe_rix_vac Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -813,18 +813,8 @@
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.i_iPRESS_R</Name>
-					<Comment><![CDATA[ Controls and I/Os]]></Comment>
+					<Comment><![CDATA[ input Pressure // Link to analog Input]]></Comment>
 					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.i_xHV_ON</Name>
-					<Comment><![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.i_xDisc_Active</Name>
-					<Comment><![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]></Comment>
-					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_SP2K2_TXAS_GCP_1.i_iPRESS_R</Name>
@@ -1296,6 +1286,24 @@
 					<Comment><![CDATA[ input Pressure // Link to analog Input]]></Comment>
 					<Type>INT</Type>
 				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.i_xAtSpd</Name>
+					<Comment><![CDATA[ Normaml operation when true]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.i_xFaultNC</Name>
+					<Comment><![CDATA[ Error]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.i_xWarn</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.i_xRemote</Name>
+					<Type>BOOL</Type>
+				</Var>
 			</Vars>
 			<Vars VarGrpType="2" ContextId="1" AreaNo="17">
 				<Name>PlcTask Outputs</Name>
@@ -1315,6 +1323,10 @@
 				<Var>
 					<Name>GVL_RIX_INTF.FB_MR4K2_FIM_ILK.q_xILK_OK_DO</Name>
 					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
@@ -1389,11 +1401,6 @@
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.q_xHV_DIS</Name>
-					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.q_xHV_DIS</Name>
 					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
 					<Type>BOOL</Type>
 				</Var>
@@ -1694,7 +1701,21 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.q_RunDO</Name>
+					<Comment><![CDATA[ Start/Stop for TC110 link this output to the Pumping station bit]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.q_PumpingStation</Name>
+					<Comment><![CDATA[ Start/Stop interlock]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.q_xRemote</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.q_xReset</Name>
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>
@@ -1727,6 +1748,10 @@
 					<Name>GVL_Serial_Com.stComIn_LI4K2_K2B_OUT_PTM_01</Name>
 					<Type GUID="{BF3C13E1-97E0-4688-A1C5-560A68ABF7DE}" Namespace="Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
+				<Var>
+					<Name>GVL_Serial_Com.stComIn_IM6K2_TXAS_PTM_01</Name>
+					<Type GUID="{BF3C13E1-97E0-4688-A1C5-560A68ABF7DE}" Namespace="Tc2_SerialCom">EL6inData22B</Type>
+				</Var>
 			</Vars>
 			<Vars VarGrpType="2" ContextId="2" AreaNo="33">
 				<Name>Serial_COM Outputs</Name>
@@ -1744,6 +1769,10 @@
 				</Var>
 				<Var>
 					<Name>GVL_Serial_Com.stComOut_LI4K2_K2B_OUT_PTM_01</Name>
+					<Type GUID="{9793463C-6188-43D2-88CD-6826815FD5BD}" Namespace="Tc2_SerialCom">EL6outData22B</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Serial_Com.stComOut_IM6K2_TXAS_PTM_01</Name>
 					<Type GUID="{9793463C-6188-43D2-88CD-6826815FD5BD}" Namespace="Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 			</Vars>
@@ -2036,9 +2065,6 @@
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.i_iPRESS_R" VarB="AI Standard Channel 2^Value" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GPI_1.i_iPRESS_R" VarB="AI Standard Channel 3^Value" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_SP2K2_TXAS_GCP_1.i_iPRESS_R" VarB="AI Standard Channel 4^Value" AutoLink="true"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 257 (EP2624-0002)">
-				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.q_xHV_DIS" VarB="Channel 1^Output" AutoLink="true" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^EK1100_03_00^EL1004_03_01">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_VGC_1.i_xClsLS" VarB="Channel 2^GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_VGC_1.i_xClsLS" Size="1"/>

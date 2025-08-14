@@ -95,12 +95,12 @@ fb_SP1K2_PAX_GCC_2 : FB_MX7M;
 {attribute 'pytmc' := ' pv: ST1K2:PPS:GCC:1 '}
 fb_ST1K2_PPS_GCC_1 : FB_MKS500;
 
-{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 2^Value;
-                             .q_xHV_DIS		:= 	TIIB[Box 257 (EP2624-0002)]^Channel 1^Output'}
-{attribute 'pytmc' := ' pv: AT3K2:SOLID:GCC:1 '}
-fb_AT3K2_SOLID_GCC_1 : FB_MKS500;
 
 //MKS972B Combo Gauges
+
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 2^Value'}
+{attribute 'pytmc' := ' pv: AT3K2:SOLID:GCP:1 '}
+fb_AT3K2_SOLID_GCC_1 : FB_972;
 
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 4^Value'}
 {attribute 'pytmc' :=' pv: SP2K2:TXAS:GCP:1 '}
@@ -349,6 +349,21 @@ RIXS_ROUGH_GPI_01 : FB_MKS275;
 {attribute 'pytmc' := ' pv: RIXS:ROUGH:VRO:01 '}
 {attribute 'TcLinkTo' := 	'.q_xOPN_DO	:=	TIIB[EL2212_03_04]^DOX Control Channel 1^Control^Output'}
 RIXS_ROUGH_VRO_01 : FB_VVC;
+
+// IM6K2 PUMP
+
+{attribute 'pytmc' := ' pv: IM6K2:TXAS:PTM:01 '}
+{attribute 'TcLinkTo' := 	'.i_xAtSpd		      := TIIB[]^Channel 1^Input ;
+                               .i_xRemote 	      := TIIB[]^Channel 2^Input ;
+                               .i_xFaultNC		  := TIIB[]^Channel 3^Input;
+                               .q_RunDO           := TIIB[]^Channel 1^Output;
+                               .q_xRemote         := TIIB[]^Channel 2^Output ;
+                               .q_PumpingStation  := TIIB[]^Channel 3^Output'}
+fb_IM6K2_TXAS_PTM_01 : FB_PTM_Pfeiffer;
+
+stPfeiffer_CTRL_IM6K2_TXAS_PTM_01     : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferControl;
+stPfeiffer_RBK_IM6K2_TXAS_PTM_01      : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferStatus;
+fbPfeifferCom_IM6K2_TXAS_PTM_01       : FB_PFEIFFER_COM;
 
 END_VAR]]></Declaration>
   </GVL>

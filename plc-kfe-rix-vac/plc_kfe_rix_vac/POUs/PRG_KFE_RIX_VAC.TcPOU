@@ -86,7 +86,7 @@ fb_IM5K2_PPM_GCC_1(PG := bm_dummy_gauge, bEP := False);
 fb_IM5K2_PPM_GCC_1.M_SetBits(30518);
 fb_TM2K2_K2B_GCC_1(PG := bm_dummy_gauge, bEP := False);
 fb_TM2K2_K2B_GCC_1.M_SetBits(30518);
-fb_AT3K2_SOLID_GCC_1(PG := fb_AT3K2_SOLID_GPI_1.PG, bEP := TRUE);
+fb_AT3K2_SOLID_GCC_1(PG=>);
 fb_SP1K2_PAX_GCC_1(PG := fb_SP1K2_PAX_GPI_1.PG, bEP := False);
 fb_SP1K2_PAX_GCC_1.M_SetBits(30518);
 fb_SP1K2_PAX_GCC_2(PG := fb_SP1K2_PAX_GPI_2.PG);
@@ -254,7 +254,7 @@ fb_SP1K2_PAX_VRC_2(i_xExtILK_OK:=bSP1K2_PAX_VRC_2_ILK,
             iq_stValve =>);
 
 bAT3K2_SOLID_VWC_01_ILK := fb_SP2K2_TXAS_GCP_1.PG.rPRESS < rAT3K2_SOLID_VWC_01_US_PRESS_SP and fb_SP2K2_TXAS_GCP_1.PG.xPRESS_OK
-                        and fb_AT3K2_SOLID_GCC_1.IG.rPRESS < rAT3K2_SOLID_VWC_01_DS_PRESS_SP and fb_AT3K2_SOLID_GCC_1.IG.xPress_OK;
+                        and fb_AT3K2_SOLID_GCC_1.PG.rPRESS < rAT3K2_SOLID_VWC_01_DS_PRESS_SP and fb_AT3K2_SOLID_GCC_1.PG.xPress_OK;
 fb_AT3K2_SOLID_VWC_01(
     i_xExtILK_OK:= bAT3K2_SOLID_VWC_01_ILK,
     i_xOverrideMode:= xSystemOverrideMode2,
@@ -373,6 +373,21 @@ fb_RIX_ILK(
     VG	:=	fb_PC1K1_ZOS_PIP_1.q_IG, //fb_PC1K1_ZOS_GCC_1.IG,
     ILK	:=	st_RIX_ILK
 );
+
+//IM6K2_PTM_01
+fb_IM6K2_TXAS_PTM_01(i_xExtIlkOK:=True, iq_stPTM=>);
+
+(*Assign adresses to the pfeiffer controllers connected to this serial terminal*)
+stPfeiffer_CTRL_IM6K2_TXAS_PTM_01[1].iSerialAddress:= 1;
+stPfeiffer_CTRL_IM6K2_TXAS_PTM_01[1].xEnableComm:= TRUE;
+(*Instanitate the Function block for serial communication with Pfeiffer*)
+fbPfeifferCom_IM6K2_TXAS_PTM_01(astPfeifferControl:= stPfeiffer_CTRL_IM6K2_TXAS_PTM_01,
+                              astPfeifferStatus:= stPfeiffer_RBK_IM6K2_TXAS_PTM_01,
+                              SerialRXBuffer:= SerialRXBuffer_IM6K2_TXAS_PTM_01,
+                              SerialTXBuffer:= SerialTXBuffer_IM6K2_TXAS_PTM_01);
+(*Copy Status Pv's into the PTM structure*)
+fb_IM6K2_TXAS_PTM_01.M_Serial_IO(st_Pfeiffer_RBK:= stPfeiffer_RBK_IM6K2_TXAS_PTM_01[1],
+                            st_Pfeiffer_CTRL:= stPfeiffer_CTRL_IM6K2_TXAS_PTM_01[1]);
 ]]></ST>
     </Implementation>
   </POU>
