@@ -95,10 +95,9 @@ fb_SP1K2_PAX_GCC_2 : FB_MX7M;
 {attribute 'pytmc' := ' pv: ST1K2:PPS:GCC:1 '}
 fb_ST1K2_PPS_GCC_1 : FB_MKS500;
 
-{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 2^Value;
-                             .q_xHV_DIS		:= 	TIIB[Box 257 (EP2624-0002)]^Channel 1^Output'}
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 2^Value'}
 {attribute 'pytmc' := ' pv: AT3K2:SOLID:GCC:1 '}
-fb_AT3K2_SOLID_GCC_1 : FB_MKS500;
+fb_AT3K2_SOLID_GCC_1 : FB_972;
 
 //MKS972B Combo Gauges
 

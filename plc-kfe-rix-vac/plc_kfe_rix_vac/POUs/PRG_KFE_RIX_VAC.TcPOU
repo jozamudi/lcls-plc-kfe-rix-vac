@@ -86,7 +86,7 @@ fb_IM5K2_PPM_GCC_1(PG := bm_dummy_gauge, bEP := False);
 fb_IM5K2_PPM_GCC_1.M_SetBits(30518);
 fb_TM2K2_K2B_GCC_1(PG := bm_dummy_gauge, bEP := False);
 fb_TM2K2_K2B_GCC_1.M_SetBits(30518);
-fb_AT3K2_SOLID_GCC_1(PG := fb_AT3K2_SOLID_GPI_1.PG, bEP := TRUE);
+fb_AT3K2_SOLID_GCC_1(PG=>);
 fb_SP1K2_PAX_GCC_1(PG := fb_SP1K2_PAX_GPI_1.PG, bEP := False);
 fb_SP1K2_PAX_GCC_1.M_SetBits(30518);
 fb_SP1K2_PAX_GCC_2(PG := fb_SP1K2_PAX_GPI_2.PG);
@@ -254,7 +254,7 @@ fb_SP1K2_PAX_VRC_2(i_xExtILK_OK:=bSP1K2_PAX_VRC_2_ILK,
             iq_stValve =>);
 
 bAT3K2_SOLID_VWC_01_ILK := fb_SP2K2_TXAS_GCP_1.PG.rPRESS < rAT3K2_SOLID_VWC_01_US_PRESS_SP and fb_SP2K2_TXAS_GCP_1.PG.xPRESS_OK
-                        and fb_AT3K2_SOLID_GCC_1.IG.rPRESS < rAT3K2_SOLID_VWC_01_DS_PRESS_SP and fb_AT3K2_SOLID_GCC_1.IG.xPress_OK;
+                        and fb_AT3K2_SOLID_GCC_1.PG.rPRESS < rAT3K2_SOLID_VWC_01_DS_PRESS_SP and fb_AT3K2_SOLID_GCC_1.PG.xPress_OK;
 fb_AT3K2_SOLID_VWC_01(
     i_xExtILK_OK:= bAT3K2_SOLID_VWC_01_ILK,
     i_xOverrideMode:= xSystemOverrideMode2,
