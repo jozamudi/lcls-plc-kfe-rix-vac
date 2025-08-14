@@ -46,6 +46,16 @@ fbSerialLineControl_LI4K2_K2B_OUT_PTM_01(
     TxBuffer:= SerialTXBuffer_LI4K2_K2B_OUT_PTM_01,
     RxBuffer:= SerialRXBuffer_LI4K2_K2B_OUT_PTM_01,
     Error=> ,
+    ErrorID=> );
+	
+fbSerialLineControl_IM6K2_TXAS_PTM_01(
+    Mode:= SERIALLINEMODE_EL6_22B,
+    pComIn:= ADR(stComIn_IM6K2_TXAS_PTM_01),
+    pComOut:= ADR(stComOut_IM6K2_TXAS_PTM_01),
+    SizeComIn:= UINT_TO_INT(SIZEOF(stComIn_IM6K2_TXAS_PTM_01)),
+    TxBuffer:= SerialTXBuffer_IM6K2_TXAS_PTM_01,
+    RxBuffer:= SerialRXBuffer_IM6K2_TXAS_PTM_01,
+    Error=> ,
     ErrorID=> );]]></ST>
     </Implementation>
   </POU>
