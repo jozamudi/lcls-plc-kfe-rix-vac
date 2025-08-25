@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
-	<POU Name="PRG_KFE_RIX_VAC" Id="{7118719b-3077-4104-9acc-cffb49d6edd3}" SpecialFunc="None">
-		<Declaration><![CDATA[PROGRAM PRG_KFE_RIX_VAC
+  <POU Name="PRG_KFE_RIX_VAC" Id="{7118719b-3077-4104-9acc-cffb49d6edd3}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_KFE_RIX_VAC
 			VAR
 			vfs_dummy_gauge : ST_VG;
 			bm_dummy_gauge : ST_VG;
@@ -26,8 +26,8 @@
 			rAT3K2_SOLID_VWC_01_DS_PRESS_SP : REAL := 0.001;
 			END_VAR
 			]]></Declaration>
-		<Implementation>
-			<ST><![CDATA[// MKS275 Gauges
+    <Implementation>
+      <ST><![CDATA[// MKS275 Gauges
 
 				fb_PC1K1_ZOS_GPI_1(PG=>);
 				fb_PC1K1_ZOS_GPI_1.M_SetBits(30518);
@@ -257,7 +257,7 @@
 				iq_stValve =>);
 
 bAT3K2_SOLID_VWC_01_ILK := fb_SP2K2_TXAS_GCP_1.PG.rPRESS < rAT3K2_SOLID_VWC_01_DS_PRESS_SP and fb_SP2K2_TXAS_GCP_1.PG.xPRESS_OK
-                        and fb_AT3K2_SOLID_GCC_1.IG.rPRESS < rAT3K2_SOLID_VWC_01_US_PRESS_SP and fb_AT3K2_SOLID_GCC_1.IG.xPress_OK;
+                        and fb_AT3K2_SOLID_GCC_1.PG.rPRESS < rAT3K2_SOLID_VWC_01_US_PRESS_SP and fb_AT3K2_SOLID_GCC_1.PG.xPress_OK;
 fb_AT3K2_SOLID_VWC_01(
     i_xExtILK_OK:= bAT3K2_SOLID_VWC_01_ILK,
     i_xOverrideMode:= xSystemOverrideMode2,

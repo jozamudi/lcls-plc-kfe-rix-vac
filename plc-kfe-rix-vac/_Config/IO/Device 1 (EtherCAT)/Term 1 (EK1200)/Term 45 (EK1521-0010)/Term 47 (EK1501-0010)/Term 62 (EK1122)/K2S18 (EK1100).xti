@@ -25,14 +25,17 @@
 		<Box File="K2S18_EL6021_E6.xti" Id="265">
 			<EtherCAT PortABoxInfo="#x01000108"/>
 		</Box>
-		<Box File="K2S18 _EL2794_E7.xti" Id="266">
+		<Box File="K2S18_EL1004_E7.xti" Id="277">
 			<EtherCAT PortABoxInfo="#x01000109"/>
 		</Box>
-		<Box File="K2S18 _EL3174-0002_E9.xti" Id="267">
-			<EtherCAT PortABoxInfo="#x0100010a"/>
+		<Box File="K2S18_EL2004_E8.xti" Id="278">
+			<EtherCAT PortABoxInfo="#x01000115"/>
 		</Box>
-		<Box File="K2S18 _EL9011_E10.xti" Id="283">
-			<EtherCAT PortABoxInfo="#x0100010b"/>
+		<Box File="K2S18_EL6021_E9.xti" Id="279">
+			<EtherCAT PortABoxInfo="#x01000116"/>
+		</Box>
+		<Box File="Term 297 (EL9011).xti" Id="297">
+			<EtherCAT PortABoxInfo="#x01000117"/>
 		</Box>
 	</Box>
 </TcSmItem>
