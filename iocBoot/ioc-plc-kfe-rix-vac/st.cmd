@@ -3,9 +3,9 @@
 #
 #         Project: plc-kfe-rix-vac.tsproj
 #        PLC name: plc_kfe_rix_vac (plc_kfe_rix_vac Instance)
-# Generated using: pytmc 2.17.0
-# Project version: 2705921
-#    Project hash: 27059216cf80949885cc270cd9b1ec99f2300860
+# Generated using: pytmc 2.18.2
+# Project version: 2ac202d
+#    Project hash: 2ac202de088c8f97100c815df5fe115f048160e9
 #     PLC IP/host: 172.21.140.69
 #      PLC Net ID: 172.21.140.69.1.1
 #  ** Production mode IOC **
@@ -14,7 +14,7 @@
 # Libraries:
 #
 #   LCLS General: * -> 2.6.0 (SLAC)
-#   LCLS Vacuum: * -> 2.3.3 (SLAC - LCLS)
+#   LCLS Vacuum: * -> 2.4.5 (SLAC - LCLS)
 #   LCLSVacuumSerialDriverLib: * -> 1.2.2 (SLAC - LCLS)
 #   PMPS: * -> 3.0.14 (SLAC - LCLS)
 #   Tc2_DataExchange: * -> 3.3.5.0 (Beckhoff Automation GmbH)
@@ -30,7 +30,7 @@
 
 epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
-epicsEnvSet("ENGINEER", "tparas" )
+epicsEnvSet("ENGINEER", "jozamudi" )
 epicsEnvSet("LOCATION", "PLC:KFE:RIX:VAC:K2" )
 epicsEnvSet("IOCSH_PS1", "$(IOC)> " )
 epicsEnvSet("ACF_FILE", "$(ADS_IOC_TOP)/iocBoot/templates/unrestricted.acf")
@@ -46,14 +46,14 @@ epicsEnvSet("ASYN_PORT",        "ASYN_PLC")
 epicsEnvSet("IPADDR",           "172.21.140.69")
 epicsEnvSet("AMSID",            "172.21.140.69.1.1")
 epicsEnvSet("AMS_PORT",         "851")
-epicsEnvSet("ADS_MAX_PARAMS",   "6526")
+epicsEnvSet("ADS_MAX_PARAMS",   "6564")
 epicsEnvSet("ADS_SAMPLE_MS",    "50")
 epicsEnvSet("ADS_MAX_DELAY_MS", "100")
 epicsEnvSet("ADS_TIMEOUT_MS",   "1000")
 epicsEnvSet("ADS_TIME_SOURCE",  "0")
 
 # Add a route to the PLC automatically:
-system("${ADS_IOC_TOP}/scripts/add_route.sh 172.21.140.69 ^172.*")
+system("${ADS_IOC_TOP}/scripts/add_route.sh 172.21.140.69 ^172.*$")
 
 # adsAsynPortDriverConfigure(portName, ipaddr, amsaddr, amsport,
 #    asynParamTableSize, priority, noAutoConnect, defaultSampleTimeMS,
@@ -93,12 +93,12 @@ dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:KFE:RIX:VAC:K
 dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:KFE:RIX:VAC:K2,IDX=3,TASK_PORT=351")
 dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:KFE:RIX:VAC:K2")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:KFE:RIX:VAC:K2,PROJECT=plc-kfe-rix-vac.tsproj,HASH=2705921,VERSION=2705921,PYTMC=2.17.0,PLC_HOST=172.21.140.69")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:KFE:RIX:VAC:K2,PROJECT=plc-kfe-rix-vac.tsproj,HASH=2ac202d,VERSION=2ac202d,PYTMC=2.18.2,PLC_HOST=172.21.140.69")
 
 #   LCLS General: * -> 2.6.0 (SLAC)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:KFE:RIX:VAC:K2,DEPENDENCY=LCLS_General,VERSION=2.6.0,VENDOR=SLAC")
-#   LCLS Vacuum: * -> 2.3.3 (SLAC - LCLS)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:KFE:RIX:VAC:K2,DEPENDENCY=LCLS_Vacuum,VERSION=2.3.3,VENDOR=SLAC - LCLS")
+#   LCLS Vacuum: * -> 2.4.5 (SLAC - LCLS)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:KFE:RIX:VAC:K2,DEPENDENCY=LCLS_Vacuum,VERSION=2.4.5,VENDOR=SLAC - LCLS")
 #   LCLSVacuumSerialDriverLib: * -> 1.2.2 (SLAC - LCLS)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:KFE:RIX:VAC:K2,DEPENDENCY=LCLSVacuumSerialDriverLib,VERSION=1.2.2,VENDOR=SLAC - LCLS")
 #   PMPS: * -> 3.0.14 (SLAC - LCLS)
@@ -123,8 +123,8 @@ cd "$(IOC_TOP)"
 ## PLC Project Database files ##
 dbLoadRecords("plc_kfe_rix_vac.db", "PORT=$(ASYN_PORT),PREFIX=PLC:KFE:RIX:VAC:K2:,IOCNAME=$(IOC),IOC=$(IOC)")
 
-# Total records: 5526
-callbackSetQueueSize(13052)
+# Total records: 5564
+callbackSetQueueSize(13128)
 
 # Autosave and archive settings:
 save_restoreSet_status_prefix("PLC:KFE:RIX:VAC:K2:")

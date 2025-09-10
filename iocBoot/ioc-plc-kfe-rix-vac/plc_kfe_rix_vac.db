@@ -682,14 +682,14 @@ record(bo, "RIXS:ROUGH:VRO:01:FORCE_OPN") {
   info(archive, "VAL")
 }
 
-record(mbbi, "AT3K2:SOLID:GCC:1:STATE_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.eState
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...D_GCC_1.IG.eState")
+record(mbbi, "AT3K2:SOLID:GCP:1:STATE_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.eState
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...D_GCP_1.PG.eState")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.eState?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.eState?")
   field(ZRVL, "0")
   field(ONVL, "1")
   field(TWVL, "2")
@@ -711,40 +711,40 @@ record(mbbi, "AT3K2:SOLID:GCC:1:STATE_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "AT3K2:SOLID:GCC:1:AutoOn_timer_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.iAutoOnTimer
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...1.IG.iAutoOnTimer")
+record(longin, "AT3K2:SOLID:GCP:1:AutoOn_timer_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.iAutoOnTimer
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...1.PG.iAutoOnTimer")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.iAutoOnTimer?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.iAutoOnTimer?")
   info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
   info(archive, "VAL")
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "AT3K2:SOLID:GCC:1:PRESS_AI_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.i_iPRESS_R
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...C_1.IG.i_iPRESS_R")
+record(longin, "AT3K2:SOLID:GCP:1:PRESS_AI_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.i_iPRESS_R
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...P_1.PG.i_iPRESS_R")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.i_iPRESS_R?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.i_iPRESS_R?")
   info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
   info(archive, "VAL")
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "AT3K2:SOLID:GCC:1:DISC_ACTIVE_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.i_xDisc_Active
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...IG.i_xDisc_Active")
+record(bi, "AT3K2:SOLID:GCP:1:DISC_ACTIVE_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.i_xDisc_Active
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...PG.i_xDisc_Active")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.i_xDisc_Active?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.i_xDisc_Active?")
   field(ZNAM, "NO DISC")
   field(ONAM, "DISC ACTIVE")
   info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
@@ -752,14 +752,14 @@ record(bi, "AT3K2:SOLID:GCC:1:DISC_ACTIVE_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "AT3K2:SOLID:GCC:1:HV_ON_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.i_xHV_ON
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...GCC_1.IG.i_xHV_ON")
+record(bi, "AT3K2:SOLID:GCP:1:HV_ON_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.i_xHV_ON
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...GCP_1.PG.i_xHV_ON")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.i_xHV_ON?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.i_xHV_ON?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
@@ -767,14 +767,14 @@ record(bi, "AT3K2:SOLID:GCC:1:HV_ON_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "AT3K2:SOLID:GCC:1:HV_DIS_DO_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.q_xHV_DIS
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...CC_1.IG.q_xHV_DIS")
+record(bi, "AT3K2:SOLID:GCP:1:HV_DIS_DO_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.q_xHV_DIS
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...CP_1.PG.q_xHV_DIS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.q_xHV_DIS?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.q_xHV_DIS?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
@@ -782,14 +782,14 @@ record(bi, "AT3K2:SOLID:GCC:1:HV_DIS_DO_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(ai, "AT3K2:SOLID:GCC:1:SP_HYS_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rHYS_PR
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCC_1.IG.rHYS_PR")
+record(ai, "AT3K2:SOLID:GCP:1:SP_HYS_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rHYS_PR
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCP_1.PG.rHYS_PR")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rHYS_PR?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rHYS_PR?")
   field(PREC, "2")
   field(EGU, "TORR")
   field(HOPR, "1000")
@@ -800,13 +800,13 @@ record(ai, "AT3K2:SOLID:GCC:1:SP_HYS_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(ao, "AT3K2:SOLID:GCC:1:SP_HYS") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rHYS_PR
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCC_1.IG.rHYS_PR")
+record(ao, "AT3K2:SOLID:GCP:1:SP_HYS") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rHYS_PR
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCP_1.PG.rHYS_PR")
   field(PINI, "1")
   field(DTYP, "asynFloat64")
   field(UDFS, "0")
-  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rHYS_PR=")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rHYS_PR=")
   field(PREC, "2")
   field(EGU, "TORR")
   field(HOPR, "1000")
@@ -816,14 +816,14 @@ record(ao, "AT3K2:SOLID:GCC:1:SP_HYS") {
   info(archive, "VAL")
 }
 
-record(ai, "AT3K2:SOLID:GCC:1:PRESS_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rPRESS
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...D_GCC_1.IG.rPRESS")
+record(ai, "AT3K2:SOLID:GCP:1:PRESS_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rPRESS
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...D_GCP_1.PG.rPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rPRESS?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rPRESS?")
   field(PREC, "2")
   field(EGU, "TORR")
   field(HOPR, "1000")
@@ -833,14 +833,14 @@ record(ai, "AT3K2:SOLID:GCC:1:PRESS_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(ai, "AT3K2:SOLID:GCC:1:PRO_SP_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rPRO_SP
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCC_1.IG.rPRO_SP")
+record(ai, "AT3K2:SOLID:GCP:1:PRO_SP_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rPRO_SP
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCP_1.PG.rPRO_SP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rPRO_SP?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rPRO_SP?")
   field(PREC, "2")
   field(EGU, "TORR")
   field(HOPR, "1000")
@@ -851,13 +851,13 @@ record(ai, "AT3K2:SOLID:GCC:1:PRO_SP_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(ao, "AT3K2:SOLID:GCC:1:PRO_SP") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rPRO_SP
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCC_1.IG.rPRO_SP")
+record(ao, "AT3K2:SOLID:GCP:1:PRO_SP") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rPRO_SP
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCP_1.PG.rPRO_SP")
   field(PINI, "1")
   field(DTYP, "asynFloat64")
   field(UDFS, "0")
-  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rPRO_SP=")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rPRO_SP=")
   field(PREC, "2")
   field(EGU, "TORR")
   field(HOPR, "1000")
@@ -867,14 +867,14 @@ record(ao, "AT3K2:SOLID:GCC:1:PRO_SP") {
   info(archive, "VAL")
 }
 
-record(ai, "AT3K2:SOLID:GCC:1:VAC_SP_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rVAC_SP
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCC_1.IG.rVAC_SP")
+record(ai, "AT3K2:SOLID:GCP:1:VAC_SP_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rVAC_SP
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCP_1.PG.rVAC_SP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rVAC_SP?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rVAC_SP?")
   field(PREC, "2")
   field(EGU, "TORR")
   field(HOPR, "1000")
@@ -885,13 +885,13 @@ record(ai, "AT3K2:SOLID:GCC:1:VAC_SP_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(ao, "AT3K2:SOLID:GCC:1:VAC_SP") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rVAC_SP
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCC_1.IG.rVAC_SP")
+record(ao, "AT3K2:SOLID:GCP:1:VAC_SP") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rVAC_SP
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCP_1.PG.rVAC_SP")
   field(PINI, "1")
   field(DTYP, "asynFloat64")
   field(UDFS, "0")
-  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.rVAC_SP=")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.rVAC_SP=")
   field(PREC, "2")
   field(EGU, "TORR")
   field(HOPR, "1000")
@@ -901,14 +901,14 @@ record(ao, "AT3K2:SOLID:GCC:1:VAC_SP") {
   info(archive, "VAL")
 }
 
-record(bi, "AT3K2:SOLID:GCC:1:AT_VAC_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xAT_VAC
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCC_1.IG.xAT_VAC")
+record(bi, "AT3K2:SOLID:GCP:1:AT_VAC_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xAT_VAC
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCP_1.PG.xAT_VAC")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xAT_VAC?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xAT_VAC?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
@@ -916,14 +916,14 @@ record(bi, "AT3K2:SOLID:GCC:1:AT_VAC_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "AT3K2:SOLID:GCC:1:Auto_On_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xAutoOn
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCC_1.IG.xAutoOn")
+record(bi, "AT3K2:SOLID:GCP:1:Auto_On_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xAutoOn
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCP_1.PG.xAutoOn")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xAutoOn?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xAutoOn?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
@@ -931,26 +931,26 @@ record(bi, "AT3K2:SOLID:GCC:1:Auto_On_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "AT3K2:SOLID:GCC:1:Auto_On") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xAutoOn
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCC_1.IG.xAutoOn")
+record(bo, "AT3K2:SOLID:GCP:1:Auto_On") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xAutoOn
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A..._GCP_1.PG.xAutoOn")
   field(DTYP, "asynInt32")
   field(UDFS, "0")
-  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xAutoOn=")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xAutoOn=")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
   info(archive, "VAL")
 }
 
-record(bi, "AT3K2:SOLID:GCC:1:HV_SW_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xHV_SW
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...D_GCC_1.IG.xHV_SW")
+record(bi, "AT3K2:SOLID:GCP:1:HV_SW_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xHV_SW
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...D_GCP_1.PG.xHV_SW")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xHV_SW?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xHV_SW?")
   field(ZNAM, "OFF")
   field(ONAM, "ON")
   info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
@@ -958,26 +958,26 @@ record(bi, "AT3K2:SOLID:GCC:1:HV_SW_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "AT3K2:SOLID:GCC:1:HV_SW") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xHV_SW
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...D_GCC_1.IG.xHV_SW")
+record(bo, "AT3K2:SOLID:GCP:1:HV_SW") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xHV_SW
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...D_GCP_1.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(UDFS, "0")
-  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xHV_SW=")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xHV_SW=")
   field(ZNAM, "OFF")
   field(ONAM, "ON")
   info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
   info(archive, "VAL")
 }
 
-record(bi, "AT3K2:SOLID:GCC:1:ILK_OK_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xILKOk
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...D_GCC_1.IG.xILKOk")
+record(bi, "AT3K2:SOLID:GCP:1:ILK_OK_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xILKOk
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...D_GCP_1.PG.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xILKOk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
   info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
@@ -985,14 +985,14 @@ record(bi, "AT3K2:SOLID:GCC:1:ILK_OK_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "AT3K2:SOLID:GCC:1:LOGGER_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xLog
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...LID_GCC_1.IG.xLog")
+record(bi, "AT3K2:SOLID:GCP:1:LOGGER_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xLog
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...LID_GCP_1.PG.xLog")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xLog?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xLog?")
   field(ZNAM, "OFF")
   field(ONAM, "ON")
   info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
@@ -1000,26 +1000,26 @@ record(bi, "AT3K2:SOLID:GCC:1:LOGGER_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "AT3K2:SOLID:GCC:1:LOGGER") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xLog
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...LID_GCC_1.IG.xLog")
+record(bo, "AT3K2:SOLID:GCP:1:LOGGER") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xLog
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...LID_GCP_1.PG.xLog")
   field(DTYP, "asynInt32")
   field(UDFS, "0")
-  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xLog=")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xLog=")
   field(ZNAM, "OFF")
   field(ONAM, "ON")
   info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
   info(archive, "VAL")
 }
 
-record(bi, "AT3K2:SOLID:GCC:1:PRESS_OK_RBV") {
-  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xPRESS_OK
-  field(DESC, "GVL_KFE_RIX_VAC.fb_A...CC_1.IG.xPRESS_OK")
+record(bi, "AT3K2:SOLID:GCP:1:PRESS_OK_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xPRESS_OK
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...CP_1.PG.xPRESS_OK")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.IG.xPRESS_OK?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCP_1.PG.xPRESS_OK?")
   field(ZNAM, "OFF")
   field(ONAM, "ON")
   info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
@@ -5101,6 +5101,501 @@ record(bo, "IM5K2:PPM:PIP:1:OVRD_ON") {
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.stPump.xOverrideMode=")
   field(ZNAM, "Override OFF")
   field(ONAM, "Override ON")
+  info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
+  info(archive, "VAL")
+}
+
+record(mbbi, "IM6K2:TXAS:PTM:01:STATE_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.eState
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...1.iq_stPTM.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
+  field(FRST, "STOPPING")
+  info(autosaveFields_pass0, "DESC DISS EISV ELSV FFSV FRSV FTSV FVSV NISV ONSV SIMS SVSV SXSV TESV THSV TTSV TVSV TWSV UDFS UNSV ZRSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "IM6K2:TXAS:PTM:01:SET_SPEED_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_dSetSpd
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...q_stPTM.i_dSetSpd")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_dSetSpd?")
+  field(EGU, "Hz")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longout, "IM6K2:TXAS:PTM:01:SET_SPEED") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_dSetSpd
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...q_stPTM.i_dSetSpd")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_dSetSpd=")
+  field(EGU, "Hz")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(longin, "IM6K2:TXAS:PTM:01:TempBearing_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diBrngTemp
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...tPTM.i_diBrngTemp")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diBrngTemp?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "IM6K2:TXAS:PTM:01:TempPump_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diBtmTemp
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...stPTM.i_diBtmTemp")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diBtmTemp?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "IM6K2:TXAS:PTM:01:SPEED_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diCurSpd
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I..._stPTM.i_diCurSpd")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diCurSpd?")
+  field(EGU, "Hz")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "IM6K2:TXAS:PTM:01:TempElec_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diElecTemp
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...tPTM.i_diElecTemp")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diElecTemp?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "IM6K2:TXAS:PTM:01:TempMotor_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diMtrTemp
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...stPTM.i_diMtrTemp")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diMtrTemp?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "IM6K2:TXAS:PTM:01:PWR_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diPwr
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I....iq_stPTM.i_diPwr")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_diPwr?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "IM6K2:TXAS:PTM:01:ErrorCode_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_iErrorCode
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...tPTM.i_iErrorCode")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_iErrorCode?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "IM6K2:TXAS:PTM:01:WarningCode_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_iWarningCode
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...TM.i_iWarningCode")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_iWarningCode?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(ai, "IM6K2:TXAS:PTM:01:CURR_MON_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_rCurrentMon
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...PTM.i_rCurrentMon")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_rCurrentMon?")
+  field(PREC, "2")
+  field(EGU, "A")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(ai, "IM6K2:TXAS:PTM:01:TEMP_MON_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_rTempMon
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I..._stPTM.i_rTempMon")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_rTempMon?")
+  field(PREC, "2")
+  field(EGU, "C")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "IM6K2:TXAS:PTM:01:Power_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_uiPowerPctRbk
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...M.i_uiPowerPctRbk")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_uiPowerPctRbk?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:ALARM_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xALARM
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...iq_stPTM.i_xALARM")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xALARM?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:ACCEL_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xAccel
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...iq_stPTM.i_xAccel")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xAccel?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:AT_SPD_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xAtSpd
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...iq_stPTM.i_xAtSpd")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xAtSpd?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "AT SPEED")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:FAULT_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xFault
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...iq_stPTM.i_xFault")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xFault?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:TempFault_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xTempFault
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...tPTM.i_xTempFault")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xTempFault?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:WARN_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xWarn
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I....iq_stPTM.i_xWarn")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.i_xWarn?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:RUN_DO_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.q_RunDO
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I....iq_stPTM.q_RunDO")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.q_RunDO?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:SET_SPEED_MODE_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.q_bSetSpd
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...q_stPTM.q_bSetSpd")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.q_bSetSpd?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bo, "IM6K2:TXAS:PTM:01:SET_SPEED_MODE") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.q_bSetSpd
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...q_stPTM.q_bSetSpd")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.q_bSetSpd=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
+  info(archive, "VAL")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:RESET_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.q_xReset
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...iq_stPTM.q_xReset")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.q_xReset?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(ai, "IM6K2:TXAS:PTM:01:BP_SP_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.rBackingPressureSP
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...BackingPressureSP")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.rBackingPressureSP?")
+  field(PREC, "2")
+  field(EGU, "TORR")
+  field(HOPR, "1000")
+  field(LOPR, "0")
+  info(autosaveFields, "DESC VAL")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(ao, "IM6K2:TXAS:PTM:01:BP_SP") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.rBackingPressureSP
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...BackingPressureSP")
+  field(PINI, "1")
+  field(DTYP, "asynFloat64")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.rBackingPressureSP=")
+  field(PREC, "2")
+  field(EGU, "TORR")
+  field(HOPR, "1000")
+  field(LOPR, "0")
+  info(autosaveFields, "DESC VAL")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(ai, "IM6K2:TXAS:PTM:01:IP_SP_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.rInletPressureSP
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I....rInletPressureSP")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.rInletPressureSP?")
+  field(PREC, "2")
+  field(EGU, "TORR")
+  field(HOPR, "1000")
+  field(LOPR, "0")
+  info(autosaveFields, "DESC VAL")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(ao, "IM6K2:TXAS:PTM:01:IP_SP") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.rInletPressureSP
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I....rInletPressureSP")
+  field(PINI, "1")
+  field(DTYP, "asynFloat64")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.rInletPressureSP=")
+  field(PREC, "2")
+  field(EGU, "TORR")
+  field(HOPR, "1000")
+  field(LOPR, "0")
+  info(autosaveFields, "DESC VAL")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:ILK_OK_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xExtRunOk
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...q_stPTM.xExtRunOk")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xExtRunOk?")
+  field(ZNAM, "ILK ACTIVE")
+  field(ONAM, "ILK OK")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:LOGGER_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xLog
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I..._01.iq_stPTM.xLog")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xLog?")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:RST_SW_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xResetSW
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...iq_stPTM.xResetSW")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xResetSW?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bo, "IM6K2:TXAS:PTM:01:RST_SW") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xResetSW
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...iq_stPTM.xResetSW")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xResetSW=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
+  info(archive, "VAL")
+}
+
+record(bi, "IM6K2:TXAS:PTM:01:RUN_SW_RBV") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xRunSW
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...1.iq_stPTM.xRunSW")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xRunSW?")
+  field(ZNAM, "STOP")
+  field(ONAM, "RUN")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bo, "IM6K2:TXAS:PTM:01:RUN_SW") {
+  # GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xRunSW
+  field(DESC, "GVL_KFE_RIX_VAC.fb_I...1.iq_stPTM.xRunSW")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_IM6K2_TXAS_PTM_01.iq_stPTM.xRunSW=")
+  field(ZNAM, "STOP")
+  field(ONAM, "RUN")
   info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
   info(archive, "VAL")
 }
@@ -78917,6 +79412,56 @@ record(bi, "$(PREFIX)RequestedBP:Valid_RBV") {
   info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
   info(archive, "monitor 1: VAL")
   field(ASG, "NO_WRITE")
+}
+
+record(ai, "AT3K2:SOLID:VWC_DS_SP_RBV") {
+  # PRG_KFE_RIX_VAC.rAT3K2_SOLID_VWC_01_DS_PRESS_SP
+  field(DESC, "PRG_KFE_RIX_VAC.rAT3...WC_01_DS_PRESS_SP")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/PRG_KFE_RIX_VAC.rAT3K2_SOLID_VWC_01_DS_PRESS_SP?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(ao, "AT3K2:SOLID:VWC_DS_SP") {
+  # PRG_KFE_RIX_VAC.rAT3K2_SOLID_VWC_01_DS_PRESS_SP
+  field(DESC, "PRG_KFE_RIX_VAC.rAT3...WC_01_DS_PRESS_SP")
+  field(DTYP, "asynFloat64")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/PRG_KFE_RIX_VAC.rAT3K2_SOLID_VWC_01_DS_PRESS_SP=")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(ai, "AT3K2:SOLID:VWC_US_SP_RBV") {
+  # PRG_KFE_RIX_VAC.rAT3K2_SOLID_VWC_01_US_PRESS_SP
+  field(DESC, "PRG_KFE_RIX_VAC.rAT3...WC_01_US_PRESS_SP")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/PRG_KFE_RIX_VAC.rAT3K2_SOLID_VWC_01_US_PRESS_SP?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(ao, "AT3K2:SOLID:VWC_US_SP") {
+  # PRG_KFE_RIX_VAC.rAT3K2_SOLID_VWC_01_US_PRESS_SP
+  field(DESC, "PRG_KFE_RIX_VAC.rAT3...WC_01_US_PRESS_SP")
+  field(DTYP, "asynFloat64")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/PRG_KFE_RIX_VAC.rAT3K2_SOLID_VWC_01_US_PRESS_SP=")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC SIMS UDFS VAL")
+  info(archive, "VAL")
 }
 
 record(bi, "PLC:KFE:RIX:FIM:COMBO:ILK_RBV") {
