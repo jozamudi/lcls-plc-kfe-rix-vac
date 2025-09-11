@@ -46241,7 +46241,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
       </Method>
       <Method>
         <Name>Write</Name>
-        <Comment> 
+        <Comment>
     Writes the contents of the buffer into a file.
 </Comment>
         <ReturnType Namespace="LCLS_General.TcUnit.SysFile.SysTypes">RTS_IEC_RESULT</ReturnType>
@@ -46368,7 +46368,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
       </Method>
       <Method>
         <Name>Find</Name>
-        <Comment> 
+        <Comment>
     Find a searchstring in the buffer and returns its position.
     It's possible to add a preffered startposition within buffer
 </Comment>
@@ -46455,7 +46455,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
       </Method>
       <Method>
         <Name>Clear</Name>
-        <Comment>  
+        <Comment>
     Clears the buffer and sets the length to 0
 </Comment>
         <Local>
@@ -46908,7 +46908,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
       </Method>
       <Method>
         <Name>ClearBuffer</Name>
-        <Comment> 
+        <Comment>
     Clears the contents of the entire buffer.
 </Comment>
       </Method>
